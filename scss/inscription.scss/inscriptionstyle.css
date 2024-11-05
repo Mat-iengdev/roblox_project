@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url(../../font/Meteor\ Fall.ttf);
+}
+@font-face {
+  font-family: "egsFont";
+  src: url(../../font/RockSalt-Regular.ttf);
+}
+body {
+  background-image: url(../../img/fond.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  z-index: 1000;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+body header a {
+  text-decoration: none;
+  position: absolute;
+  z-index: 4000;
+  top: 10px;
+  left: 42%;
+}
+body header a #font1 {
+  font-family: "myfont";
+  color: white;
+  text-shadow: 2px 2px violet;
+  font-size: 4rem;
+}
+body header a #font2 {
+  font-family: "egsFont";
+  color: violet;
+  text-shadow: 2px 2rgba 255, 255, 255, 5;
+  font-size: 1rem;
+}
+body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  background-color: #202020;
+  width: 40%;
+  height: 87%;
+  margin-top: 20px;
+}
+body main section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3500;
+  width: 90%;
+}
+body main section h1 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+body main section div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+body main section div label {
+  color: white;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+body main section div input {
+  background-color: black;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 5vh;
+  padding: 0px 10px;
+  width: 100%;
+}
+body main section div p {
+  color: grey;
+  font-family: sans-serif;
+}
+body main section div p span {
+  color: #1d52ac;
+  text-decoration: underline;
+}
+body main section div button {
+  background-color: grey;
+  font-family: sans-serif;
+  border-radius: 5px;
+  height: 5vh;
+  width: 100%;
+}
+body main section div #genre {
+  color: white;
+}
+body main section #gender-choice {
+  border: 1px grey solid;
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  background-color: black;
+}
+body main section #gender-choice label {
+  width: 50%;
+}
+body main section #gender-choice label input {
+  display: none;
+}
+body main section #gender-choice label input:checked + .icon {
+  background-color: green;
+}
+body main section #gender-choice label .icon {
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+body main section #gender-choice #separation {
+  background-color: grey;
+  width: 1px;
+}/*# sourceMappingURL=inscriptionstyle.css.map */

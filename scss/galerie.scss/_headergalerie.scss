@@ -1,0 +1,55 @@
+@import '../_var.scss';
+
+header {
+    background-image: url(../../img/galerie.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    nav {
+        ul {
+            width: 90%;
+            margin:auto;
+            padding: 30px 0px;
+            list-style-type: none;
+            @include displayBetween;
+            li {
+                width: 17%;
+                a {
+                    font-size: 1.3rem;
+                    font-family: sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    #font1 {
+                        @include myfont;
+                        font-size: 3rem;
+                    }
+                    #font2 {
+                        font-family: 'egsFont';
+                        color: violet;
+                        text-shadow: 1px 1px white;
+                    }
+                    button {
+                        color: white;
+                        background-color: violet;
+                        border: 1px solid white;
+                        border-radius: 4px;
+                        padding: 10px 10px;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            li:nth-of-type(2) {
+                margin-left: auto;
+            }
+            li:nth-of-type(2):hover a, 
+            li:nth-of-type(3):hover a {
+                color: violet;
+            }
+        }
+    }
+    h1 {
+        @include myfont;
+        font-size: 5rem;
+        @include centerObject;
+    }
+}

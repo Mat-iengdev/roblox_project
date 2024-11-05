@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url(../../font/Meteor\ Fall.ttf);
+}
+@font-face {
+  font-family: "egsFont";
+  src: url(../../font/RockSalt-Regular.ttf);
+}
+footer {
+  margin-top: 30px;
+  background-color: #202020;
+  padding: 20px 0px;
+}
+footer nav {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav #after {
+  position: relative;
+}
+footer nav p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+footer nav p #font1 {
+  font-family: "myfont";
+  color: white;
+  text-shadow: 2px 2px violet;
+  font-size: 3rem;
+}
+footer nav p #font2 {
+  font-family: "egsFont";
+  color: violet;
+  text-shadow: 1px 1px white;
+}
+footer nav #after::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: violet;
+  width: 180px;
+  bottom: -10px;
+  left: 0;
+}
+footer nav button {
+  color: white;
+  background-color: violet;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-size: 1.3rem;
+}
+footer nav div {
+  text-align: center;
+}
+footer nav div p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+footer nav div ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
+}
+footer nav div ul li {
+  width: 30%;
+}
+footer nav div ul li a img {
+  width: 30%;
+}
+
+main h2 {
+  font-size: 3.7rem;
+  font-family: "myfont";
+  color: violet;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  padding: 60px;
+}
+main section {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 10% 1fr;
+  gap: 20px;
+}
+main section div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section #oeuvre1 {
+  grid-area: 1/1/2/2;
+}
+main section #oeuvre2 {
+  grid-area: 1/2/2/4;
+}
+main section #oeuvre3 {
+  grid-area: 2/1/4/3;
+}
+main section #oeuvre4 {
+  grid-area: 2/3/3/4;
+}
+main section #oeuvre5 {
+  grid-area: 3/3/4/4;
+}
+main section #oeuvre6 {
+  grid-area: 4/1/5/4;
+}
+
+header {
+  background-image: url(../../img/galerie.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+header nav ul {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  width: 17%;
+}
+header nav ul li a {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a #font1 {
+  font-family: "myfont";
+  color: white;
+  text-shadow: 2px 2px violet;
+  font-size: 3rem;
+}
+header nav ul li a #font2 {
+  font-family: "egsFont";
+  color: violet;
+  text-shadow: 1px 1px white;
+}
+header nav ul li a button {
+  color: white;
+  background-color: violet;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-size: 1.3rem;
+}
+header nav ul li:nth-of-type(2) {
+  margin-left: auto;
+}
+header nav ul li:nth-of-type(2):hover a,
+header nav ul li:nth-of-type(3):hover a {
+  color: violet;
+}
+header h1 {
+  font-family: "myfont";
+  color: white;
+  text-shadow: 2px 2px violet;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=galeriestyle.css.map */

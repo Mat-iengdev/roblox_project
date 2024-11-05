@@ -1,0 +1,65 @@
+@import '../_var.scss';
+
+footer {
+    margin-top: 30px;
+    background-color: #202020;
+    padding: 20px 0px;
+    nav {
+        @include w90auto;
+        @include displayBetween;
+        #after {
+            position: relative;
+        }
+        p {
+            color: white;
+            font-size: 1.3rem;
+            font-family: sans-serif;
+            #font1 {
+                @include myfont;
+                font-size: 3rem;
+            }
+            #font2 {
+                font-family: 'egsFont';
+                color: violet;
+                text-shadow: 1px 1px white;
+            }
+        }
+        #after::after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            background-color: violet;
+            width: 180px;
+            bottom: -10px;
+            left: 0;
+        }
+        button {
+            color: white;
+            background-color: violet;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 10px 10px;
+            font-size: 1.3rem;
+        }
+        div {
+            text-align: center;
+            p{
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
+            ul {display: flex;
+                justify-content: space-evenly;
+                list-style-type: none;
+                width: 100%;
+                li {
+                    width: 30%;
+                    a{
+                        img {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

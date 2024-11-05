@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(../../font/Meteor\ Fall.ttf);
+}
+
+@font-face {
+    font-family: 'egsFont';
+    src: url(../../font/RockSalt-Regular.ttf);
+}
+
+@import '_footergalerie.scss';
+@import '_maingalerie.scss';
+@import '_headergalerie.scss';

@@ -1,0 +1,43 @@
+@import '../_var.scss';
+
+main {
+    h2 {
+        font-size: 3.7rem;
+        font-family: 'myfont';
+        color: violet;
+        text-shadow: 2px 2px black;
+        text-align: center;
+        padding: 60px;
+    }
+    section {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 10% 1fr;
+        gap: 20px;
+        div {
+            img {
+                @include imgSize;
+            }
+        }
+        #oeuvre1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        #oeuvre2 {
+            grid-area: 1 / 2 / 2 / 4;
+        }
+        #oeuvre3 {
+            grid-area: 2 / 1 / 4 / 3;
+        }
+        #oeuvre4 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+        #oeuvre5 {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+        #oeuvre6 {
+            grid-area: 4 / 1 / 5 / 4;
+        }
+    }
+}

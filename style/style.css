@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(../font/Meteor\ Fall.ttf);
+}
+
+@font-face {
+    font-family: 'egsFont';
+    src: url(../font/RockSalt-Regular.ttf);
+}
+
+
+header nav {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+    background-image: url(../img/fondHome.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.font2 {
+    font-family: 'egsFont';
+    color: violet;
+}
+
+.font1 {
+    font-family: 'myfont';
+    text-shadow: 5px 5px violet;
+    color: white;
+    font-size: 2.5rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .h2 {
+    color: white;
+    font-family: 'myfont';
+    font-size: 5rem;
+    text-shadow: 5px 5px violet;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position:absolute;
+    width: 27%;
+    top: -30px;
+    left: 80px;
+}
+
+h3 {
+    font-family: 'myfont';
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px violet;
+}
+ section:nth-of-type(1) {
+    border-top: 1px solid white;
+ }
+
+ .ps {
+    padding-left: 120px;
+ }
+
+ section:nth-of-type(1) img {
+    width: 70%;
+ }
+
+ section:nth-of-type(2) p {
+    font-size: 1.3rem;
+ }
+
+ button {
+    background-color: violet;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+ }
+
+.chevron {
+    position: relative;
+}
+
+ .chevron::after {
+    font-size: 40px;
+    position: absolute;
+    border: 1px solid violet;
+    content: ">";
+    color: violet;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -2px;
+    right: -10px;
+    line-height: 42px;
+ }
+
+ .lastTitle {
+    padding-top: 200px;
+    color: violet;
+    text-shadow: 5px 5px black;
+ }
+
+ input {
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: violet;
+ }
+
+ footer a {
+    text-decoration: none;
+ }
+
+ footer p {
+    color: white;
+ }
+
+ .borderBot {
+    border-bottom: 1px solid violet;
+    width: 160px;
+ }
+
+ @media screen and (max-width: 768px) {
+    .hamburger {
+        width: 10px; 
+        height: 4px; 
+        background-color: violet; 
+        margin: 10px 0;
+    }
+    .pb {
+        padding-bottom: 180px;
+    }
+
+    section:nth-of-type(1) h3 {
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .ps {
+        margin-right: 50px;
+    }
+    .absolute {
+        top: unset;
+        left: unset;
+        width: 20%;
+        bottom: 0;
+        right: 0;
+    }
+
+    .chevron {
+        margin: 40px auto;
+        width: 70%;
+        font-size:1.1rem;
+    }
+   section:nth-of-type(2) {
+    margin-top: -130px;
+   }
+   section:nth-of-type(2) h3 {
+    font-size: 4rem;
+   }
+}

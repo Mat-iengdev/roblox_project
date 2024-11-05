@@ -1,0 +1,37 @@
+@mixin myfont {
+    font-family: 'myfont';
+    color: white;
+    text-shadow: 2px 2px violet;
+}
+
+@mixin egsFont {
+    font-family: 'egsFont';
+    color: violet;
+    text-shadow: 2px 2rgba(255, 255, 255,5);
+}
+
+$absolute: absolute;
+
+@mixin centerObject {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin displayBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin imgSize {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin w90auto {
+    margin: auto;
+    width: 90%;
+}
